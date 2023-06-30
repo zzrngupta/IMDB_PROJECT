@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB Clone Project</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--A navigation bar comprising a home button, a search box, and a go-to favorites button. -->
+    <header id="navigationBar">
+
+        <!-- The home button directs the user to the homepage. -->
+        <button id="homeButton" class="textIconButton">
+            <img alt= "Home-ICON" src="./pic/icon-of-home.jpg">
+            <span>Home</span>
+        </button>
+
+        <!-- search box -->
+        <label  for="searchBox">Search Movies:</label> 
+        <input type="text" id="searchBox">
+        
+
+        <!-- The user will be redirected to the favorites movie page when clicking on the "gotoFavouritesButton" button. -->
+        <button id="gotoFavouritesButton" class="textIconButton">
+            <img  alt= "fAVOURITES-ICON" src="./pic/favourite-of-folder.jpg">
+            <span>Selected Favourite Movies</span>
+        </button>
+
+    </header>
+
+
+    <main id="movieCardContainer">
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+/* resetting default margin and padding */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-size: cover;
+    background-color: rgb(37, 35, 35);
+}
+
+/* navigation bar styling */
+#navigationBar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    background: rgb(63, 58, 79);
+    padding: 4px;
+    height: 45px;
+}
+
+#searchBox{
+    width: 50%;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif ;
+    background-color: azure;
+    border-radius: 15%;
+    
+}
+
+
+.textIconButton{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 15%;
+    background-color: azure;
+}
+
+.textIconButton span{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    padding: 6px;
+}
+
+
+/* style of movies display container  */
+#movieCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.movieCard{
+    height: 500px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(42, 41, 35, 0.442);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: padding 0.6s;
+}
+
+.movieCard:hover{
+    box-shadow: 5px 5px 10px rgba(100, 89, 130, 0.5);
+    padding: 6px;
+}
+
+.moviePoster{
+    height: 350px;
+}
+
+.movieTitleContainer{
+    text-align: center;
+    background: rgb(151, 48, 128); 
+    color: rgb(171, 156, 212);
+    border-radius: 5px;
+}
+
+.movieTitleContainer > span{
+    display: inline-block;
+    width: 80%;
+}
+
+.movieTitleContainer > div {
+    text-align: center;
+    width: 30%;
+}
+.ratingContainer{
+    height: 50px;
+    display: inline-block;
+}
+
+.ratingContainer img{
+    height: 25px;
+}
+
+.addToFavouriteButton{
+    height: 40px;
+}
+
+.addToFavouriteButton > img{
+    height: 30px;
+}
+
+
+/* detail overview of movie styling */
+.detailMovieCard{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    color: whitesmoke;
+    background:rgba(63, 58, 79, 0.8);
+}
+
+.detailMovieBackground{
+    display: block;
+    width: 85% ;
+    height: 310px;
+    margin: auto;
+    opacity: 0.5;
+    background-color: rgb(50, 44, 44);
+
+}
+
+.detailMoviePoster{
+    display: block;
+    position: relative;
+    height: 300px;
+    margin: auto;
+    margin-top: -150px;
+    z-index: 2;
+}
+
+.detailMovieTitle{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    background:rgb(167, 50, 93);
+}
+
+.detailMovieTitle > span {
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.detailMovieRating{
+    display: flex;
+    align-items: center;
+}
+
+.detailMovieRating > img{
+    height: 30px;
+    margin: 5px;
+}
+
+.detailMoviePlot{
+    width: 80%;
+    padding: 5px;
+    margin: auto;
+}
+
+.detailMoviePlot > p {
+    margin: 15px;
+}
